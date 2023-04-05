@@ -1,0 +1,42 @@
+info:
+  title: Weather Plugin
+  description: A plugin that allows the user to get current weather information for a specified city.
+  version: 'v1'
+servers:
+  - url: PLUGIN_HOSTNAME
+paths:
+  /weather:
+    post:
+      operationId: getWeather
+      summary: Get the current weather for a specified city
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/getWeatherRequest'
+      responses:
+        "200":
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/getWeatherResponse'
+                
+components:
+  schemas:
+    getWeatherRequest:
+      type: object
+      required:
+      - city
+      properties:
+        city:
+          type: string
+          description: The city for which to fetch the current weather.
+          required: true
+    getWeatherResponse:
+      type: object
+      properties:
+        weather:
+          type: object
+          description: The weather data for the specified city.

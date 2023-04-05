@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "Weather Plugin",
+  "name_for_model": "weather",
+  "description_for_human": "Plugin for getting current weather information.",
+  "description_for_model": "Plugin for getting current weather information.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://gptweather.skirano.repl.co/openapi.yaml",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://example.com/logo.png",
+  "contact_email": "support@example.com",
+  "legal_info_url": "https://example.com/legal"
+}
