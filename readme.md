@@ -1,5 +1,3 @@
-In this tutorial, we will create a simple to-do list plugin using OpenAI's new plugin system. We will be using Python and deploying the plugin on Replit. The plugin will be authenticated using a service level authentication token and will allow users to create, view, and delete to-do items. We will also be defining an OpenAPI specification to match the endpoints defined in our plugin.
-
 ## ChatGPT Plugins
 
 The ChatGPT plugin system enables language models to interact with external tools and services, providing access to information and enabling safe, constrained actions. Plugins can address challenges associated with large language models, including keeping up with recent events, accessing up-to-date information, and providing evidence-based references to enhance the model's responses.
